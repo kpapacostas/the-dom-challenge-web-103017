@@ -30,7 +30,14 @@ like.addEventListener('click', function(){
   } else {
     likes[counter] = 1
   }
+  const list_likes = document.createElement('DIV')
+  const cool = document.createTextNode(`${counter} has been liked ${likes[counter]} times`)
+  list_likes.append(cool)
+  document.getElementsByClassName('likes') = list_likes
 })
+
+
+
 
 const pause = document.getElementById('pause')
 
